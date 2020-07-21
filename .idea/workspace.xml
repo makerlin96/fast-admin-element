@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aff61831-97ea-4b14-842e-cfe645d01ff1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1exDao7svmoisQwpYSyGSTgOCXB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mongo&#10;mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/starry/service/impl" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\3.Java-demo\admin\src\main\java\com\starry\service\impl" />
+      <recent name="D:\3.Java-demo\admin\src\main\java\com\starry\service" />
+      <recent name="D:\3.Java-demo\admin\src\main\resources\mapper" />
+      <recent name="D:\3.Java-demo\admin\src\main\java\com\starry\dao" />
+      <recent name="D:\3.Java-demo\admin\src\main\java\com\starry\entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AdminApplicationTests.getCaptcha">
+    <configuration name="GeneratorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.starry.generator.GeneratorApplication" />
+      <module name="admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.starry.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApplicationTests.getCaptcha" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.starry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.starry" />
+      <option name="MAIN_CLASS_NAME" value="com.starry.AdminApplicationTests" />
+      <option name="METHOD_NAME" value="getCaptcha" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApplicationTests.getUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.starry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.starry" />
+      <option name="MAIN_CLASS_NAME" value="com.starry.AdminApplicationTests" />
+      <option name="METHOD_NAME" value="getUserByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.starry.AdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AdminApplicationTests.getCaptcha" />
+        <item itemvalue="JUnit.AdminApplicationTests.getUserByUsername" />
+        <item itemvalue="Application.GeneratorApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aff61831-97ea-4b14-842e-cfe645d01ff1" name="Default Changelist" comment="" />
+      <created>1595254416825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595254416825</updated>
+      <workItem from="1595254419553" duration="9044000" />
+      <workItem from="1595322883742" duration="207000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#SQL_Dialects" timestamp="1595258803872">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1595258803872" />
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595258782209">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1595258782209" />
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1595258843074">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1595258843074" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1595257123367">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1595257123367" />
+    <state width="1323" height="203" key="GridCell.Tab.0.bottom" timestamp="1595296002840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595296002840" />
+    <state width="1323" height="203" key="GridCell.Tab.0.center" timestamp="1595296002839">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595296002839" />
+    <state width="1323" height="203" key="GridCell.Tab.0.left" timestamp="1595296002839">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595296002839" />
+    <state width="1323" height="203" key="GridCell.Tab.0.right" timestamp="1595296002840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="203" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595296002840" />
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1595296002818">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595296002818" />
+    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1595296002818">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1595296002818" />
+    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1595296002818">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1595296002818" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1595296002818">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1595296002818" />
+    <state width="1323" height="238" key="GridCell.Tab.2.bottom" timestamp="1595296002819">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595296002819" />
+    <state width="1323" height="238" key="GridCell.Tab.2.center" timestamp="1595296002819">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1595296002819" />
+    <state width="1323" height="238" key="GridCell.Tab.2.left" timestamp="1595296002818">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1595296002818" />
+    <state width="1323" height="238" key="GridCell.Tab.2.right" timestamp="1595296002819">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1595296002819" />
+    <state x="254" y="26" key="Registry" timestamp="1595323055983">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="254" y="26" key="Registry/0.0.1366.728@0.0.1366.728" timestamp="1595323055983" />
+    <state x="164" y="0" key="SettingsEditor" timestamp="1595323094421">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="164" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595323094421" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1595257888768">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1595257888768" />
+  </component>
+</project>
