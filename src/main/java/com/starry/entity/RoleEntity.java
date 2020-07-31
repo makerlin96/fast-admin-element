@@ -1,10 +1,14 @@
 package com.starry.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import java.util.Date;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * <p>
@@ -37,12 +41,24 @@ public class RoleEntity implements Serializable {
       /**
      * 创建时间
      */
+      @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
       private Date createTime;
 
       /**
      * 逻辑删除 0未删除   1已删除
      */
       private Boolean deleted;
+
+    public List<Long> getPermissions() {
+        return permissions;
+    }
+
+    public void setPermissions(List<Long> permissions) {
+        this.permissions = permissions;
+    }
+
+    @TableField(exist = false)
+    private List<Long> permissions;
 
     
     public Long getRoleId() {

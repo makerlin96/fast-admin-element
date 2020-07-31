@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.starry.dao.MenuMapper">
-
+    <select id="selectUserButtonList" resultType="String">
+        SELECT C.perms
+        FROM t_user_role AS A
+                 LEFT JOIN t_role_menu AS B ON A.role_id = B.role_id
+                 LEFT JOIN t_menu AS C ON FIND_IN_SET(C.id, B.menu_id)
+        WHERE A.user_id = #{userId}
+    </select>
+    <select id="selectMenuTreeByUserId" resultType="com.starry.entity.MenuEntity">
+        SELECT a.id,
+               a.parent_id,
+               a.name,
+               a.path,
+               a.component,
+               a.status,
+               ifnull(a.perms, '') as perms,
+               a.is_frame,
+               a.menu_type,
+               a.icon,
+               a.sort
+        FROM t_menu AS a
+                 LEFT JOIN t_role_menu AS B ON FIND_IN_SET(A.ID, B.menu_id)
+                 LEFT JOIN t_user_role AS C ON B.role_id = C.role_id
+                 LEFT JOIN t_role AS D ON C.role_id = D.role_id
+                 LEFT JOIN t_user AS E ON E.user_id = C.user_id
+        WHERE E.user_id = #{userId}
+          AND A.menu_type IN (1, 2)
+          AND A.`status` = 0
+    </select>
+    <select id="selectMenuByUserId" parameterType="String" resultType="long">
+        SELECT M.perms
+        FROM t_user_role AS UR
+                 LEFT JOIN t_role_menu AS RM ON UR.role_id = RM.role_id
+                 LEFT JOIN t_menu AS M ON FIND_IN_SET(M.ID, RM.menu_id)
+        WHERE UR.user_id = #{userId}
+    </select>
+    <select id="selectList" resultType="com.starry.vo.tree.MenuTreeVO">
+        select *
+        from t_menu
+        where deleted = 0
+        order by sort
+    </select>
+    <select id="selectPermissionTree" resultType="com.starry.vo.tree.PermissionTreeVO">
+        select m.id, m.parent_id, m.name
+        from t_menu m
+    </select>
 </mapper>

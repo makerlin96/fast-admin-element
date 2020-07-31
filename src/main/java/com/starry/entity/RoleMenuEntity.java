@@ -3,7 +3,10 @@ package com.starry.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import lombok.Data;
+
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * <p>
@@ -14,6 +17,7 @@ import java.io.Serializable;
  * @since 2020-07-20
  */
 @TableName("t_role_menu")
+@Data
 public class RoleMenuEntity implements Serializable {
 
     private static final long serialVersionUID=1L;
@@ -21,36 +25,12 @@ public class RoleMenuEntity implements Serializable {
       /**
      * 角色ID
      */
-        @TableId(value = "role_id", type = IdType.AUTO)
+        @TableId(value = "role_id")
       private Long roleId;
 
       /**
      * 菜单ID
      */
-      private Long menuId;
+      private String menuId;
 
-    
-    public Long getRoleId() {
-        return roleId;
-    }
-
-      public void setRoleId(Long roleId) {
-          this.roleId = roleId;
-      }
-    
-    public Long getMenuId() {
-        return menuId;
-    }
-
-      public void setMenuId(Long menuId) {
-          this.menuId = menuId;
-      }
-
-    @Override
-    public String toString() {
-        return "RoleMenuEntity{" +
-              "roleId=" + roleId +
-                  ", menuId=" + menuId +
-              "}";
-    }
 }

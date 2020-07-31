@@ -1,9 +1,11 @@
 package com.starry.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * <p>
@@ -41,9 +43,9 @@ public class MenuEntity implements Serializable {
      */
       private String component;
 
-    private Boolean menuType;
+    private Integer menuType;
 
-    private Boolean status;
+    private Integer status;
 
       /**
      * 授权 多个用逗号分隔，如：user:list,user:create)
@@ -53,7 +55,7 @@ public class MenuEntity implements Serializable {
       /**
      * 是否为外链（0不是  1是）
      */
-      private Boolean isFrame;
+      private Integer isFrame;
 
       /**
      * 菜单图标
@@ -70,7 +72,27 @@ public class MenuEntity implements Serializable {
      */
       private Boolean deleted;
 
-    
+    public Boolean getHidden() {
+        return hidden;
+    }
+
+    public void setHidden(Boolean hidden) {
+        this.hidden = hidden;
+    }
+
+    private Boolean hidden;
+
+    @TableField(exist = false)
+    private List<MenuEntity> children;
+
+    public List<MenuEntity> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<MenuEntity> children) {
+        this.children = children;
+    }
+
     public Long getId() {
         return id;
     }
@@ -111,19 +133,19 @@ public class MenuEntity implements Serializable {
           this.component = component;
       }
     
-    public Boolean getMenuType() {
+    public Integer getMenuType() {
         return menuType;
     }
 
-      public void setMenuType(Boolean menuType) {
+      public void setMenuType(Integer menuType) {
           this.menuType = menuType;
       }
     
-    public Boolean getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-      public void setStatus(Boolean status) {
+      public void setStatus(Integer status) {
           this.status = status;
       }
     
@@ -135,11 +157,11 @@ public class MenuEntity implements Serializable {
           this.perms = perms;
       }
     
-    public Boolean getFrame() {
+    public Integer getIsFrame() {
         return isFrame;
     }
 
-      public void setFrame(Boolean isFrame) {
+      public void setIsFrame(Integer isFrame) {
           this.isFrame = isFrame;
       }
     

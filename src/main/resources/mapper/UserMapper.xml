@@ -2,6 +2,26 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.starry.dao.UserMapper">
     <select id="selectUserByUsername" parameterType="String" resultType="com.starry.entity.UserEntity">
-        select * from t_user where username = #{username}
+        select *
+        from t_user
+        where username = #{username}
+    </select>
+    <select id="selectPageList" resultType="com.starry.entity.UserEntity">
+        SELECT a.user_id,
+        a.username,
+        a.real_name,
+        a.mobile,
+        a.`status`,
+        a.last_login_time,
+        a.create_time,
+        a.face
+        FROM t_user as a
+        where 1 = 1
+        <if test="params.username != null and params.username.trim() != ''">
+            and a.username like concat('%', #{params.username}, '%')
+        </if>
+        <if test="params.realName != null and params.realName.trim() != ''">
+            and a.real_name like concat('%', #{params.real_name}, '%')
+        </if>
     </select>
 </mapper>

@@ -3,7 +3,10 @@ package com.starry.dao;
 import com.starry.entity.RoleMenuEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * <p>
@@ -16,5 +19,5 @@ import org.springframework.stereotype.Repository;
 @Mapper
 @Repository
 public interface RoleMenuMapper extends BaseMapper<RoleMenuEntity> {
-
+    int insertOrUpdate(@Param("roleId") Long roleId, @Param("menuId") String menuId);
 }
